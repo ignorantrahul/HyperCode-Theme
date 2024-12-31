@@ -1,0 +1,135 @@
+{
+    "hidesExplorerArrows": false,
+    "iconDefinitions": {
+        "file": {
+            "iconPath": "themes/icons/file.svg"
+        },
+        "folder": {
+            "iconPath": "themes/icons/folder.svg"
+        },
+        "folder-expanded": {
+            "iconPath": "themes/icons/folder-expanded.svg"
+        },
+        "root-folder": {
+            "iconPath": "themes/icons/root-folder.svg"
+        },
+        "root-folder-expanded": {
+            "iconPath": "themes/icons/root-folder-expanded.svg"
+        },
+        "typescript": {
+            "iconPath": "themes/icons/typescript.svg"
+        },
+        "javascript": {
+            "iconPath": "themes/icons/javascript.svg"
+        },
+        "python": {
+            "iconPath": "themes/icons/python.svg"
+        },
+        "java": {
+            "iconPath": "themes/icons/java.svg"
+        },
+        "html": {
+            "iconPath": "themes/icons/html.svg"
+        },
+        "css": {
+            "iconPath": "themes/icons/css.svg"
+        },
+        "json": {
+            "iconPath": "themes/icons/json.svg"
+        },
+        "yaml": {
+            "iconPath": "themes/icons/yaml.svg"
+        },
+        "toml": {
+            "iconPath": "themes/icons/toml.svg"
+        },
+        "markdown": {
+            "iconPath": "themes/icons/markdown.svg"
+        },
+        "git": {
+            "iconPath": "themes/icons/git.svg"
+        },
+        "npm": {
+            "iconPath": "themes/icons/npm.svg"
+        },
+        "yarn": {
+            "iconPath": "themes/icons/yarn.svg"
+        },
+        "test": {
+            "iconPath": "themes/icons/test.svg"
+        },
+        "folder_src": {
+            "iconPath": "themes/icons/folder-src.svg"
+        },
+        "folder_dist": {
+            "iconPath": "themes/icons/folder-dist.svg"
+        },
+        "folder_node": {
+            "iconPath": "themes/icons/folder-node.svg"
+        },
+        "folder_test": {
+            "iconPath": "themes/icons/folder-test.svg"
+        },
+        "folder_github": {
+            "iconPath": "themes/icons/folder-github.svg"
+        },
+        "folder_vscode": {
+            "iconPath": "themes/icons/folder-vscode.svg"
+        }
+    },
+    "file": "file",
+    "folder": "folder",
+    "folderExpanded": "folder-expanded",
+    "rootFolder": "root-folder",
+    "rootFolderExpanded": "root-folder-expanded",
+    "fileExtensions": {
+        "ts": "typescript",
+        "tsx": "typescript",
+        "d.ts": "typescript",
+        "js": "javascript",
+        "jsx": "javascript",
+        "mjs": "javascript",
+        "py": "python",
+        "pyw": "python",
+        "ipynb": "python",
+        "java": "java",
+        "jar": "java",
+        "html": "html",
+        "htm": "html",
+        "css": "css",
+        "scss": "css",
+        "sass": "css",
+        "json": "json",
+        "yml": "yaml",
+        "yaml": "yaml",
+        "toml": "toml",
+        "md": "markdown",
+        "mdx": "markdown",
+        "spec.ts": "test",
+        "test.ts": "test",
+        "spec.js": "test",
+        "test.js": "test"
+    },
+    "fileNames": {
+        ".gitignore": "git",
+        ".gitattributes": "git",
+        ".gitmodules": "git",
+        "package.json": "npm",
+        "package-lock.json": "npm",
+        "yarn.lock": "yarn"
+    },
+    "folderNames": {
+        "src": "folder_src",
+        "source": "folder_src",
+        "dist": "folder_dist",
+        "build": "folder_dist",
+        "out": "folder_dist",
+        "node_modules": "folder_node",
+        "test": "folder_test",
+        "tests": "folder_test",
+        "__tests__": "folder_test",
+        ".github": "folder_github",
+        ".vscode": "folder_vscode"
+    },
+    "languageIds": {}
+}
