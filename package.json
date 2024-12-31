@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/ignorantrahul/HyperCode-Theme#readme",
   "engines": {
-    "vscode": "^1.43.0"
+    "vscode": "^1.85.0",
+    "node": ">=18.0.0"
   },
   "categories": [
     "Themes"
@@ -28,7 +29,9 @@
     "light theme",
     "nord theme",
     "neomorphic",
-    "hypercode"
+    "hypercode",
+    "file icons",
+    "folder icons"
   ],
   "contributes": {
     "themes": [
@@ -50,8 +53,8 @@
     ],
     "iconThemes": [
       {
-        "label": "HyperCode",
-        "id": "hypercode-file-icon-theme",
+        "id": "hypercode-icons",
+        "label": "HyperCode Icons",
         "path": "./themes/hypercode-file-icon-theme.json"
       }
     ]
@@ -59,26 +62,44 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "generate": "npm run build && node dist/index.js",
-    "package": "vsce package",
-    "publish": "vsce publish",
-    "lint": "eslint src --ext ts",
+    "clean": "rimraf dist themes/*.json",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
     "format": "prettier --write \"src/**/*.ts\"",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "prebuild": "npm run clean",
+    "prepare": "husky install",
+    "generate:themes": "ts-node src/builders/themeBuilder.ts",
+    "generate:icons": "ts-node src/builders/iconBuilder.ts",
+    "package": "npm run build && npm run generate:themes && npm run generate:icons && vsce package",
+    "publish": "vsce publish"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.14",
-    "@types/node": "^20.0.0",
-    "@types/vscode": "^1.43.0",
-    "@typescript-eslint/eslint-plugin": "^8.19.0",
-    "@typescript-eslint/parser": "^8.19.0",
-    "eslint": "^9.17.0",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.17.10",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "@vscode/vsce": "^2.22.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jest": "^27.6.1",
+    "husky": "^8.0.3",
     "jest": "^29.7.0",
-    "prettier": "^3.4.2",
-    "ts-jest": "^29.2.5",
-    "typescript": "^5.7.2",
-    "@vscode/vsce": "^3.2.1"
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "license": "MIT"
 }
-

@@ -1,135 +1,343 @@
 {
-    "hidesExplorerArrows": false,
-    "iconDefinitions": {
-        "file": {
-            "iconPath": "themes/icons/file.svg"
-        },
-        "folder": {
-            "iconPath": "themes/icons/folder.svg"
-        },
-        "folder-expanded": {
-            "iconPath": "themes/icons/folder-expanded.svg"
-        },
-        "root-folder": {
-            "iconPath": "themes/icons/root-folder.svg"
-        },
-        "root-folder-expanded": {
-            "iconPath": "themes/icons/root-folder-expanded.svg"
-        },
-        "typescript": {
-            "iconPath": "themes/icons/typescript.svg"
-        },
-        "javascript": {
-            "iconPath": "themes/icons/javascript.svg"
-        },
-        "python": {
-            "iconPath": "themes/icons/python.svg"
-        },
-        "java": {
-            "iconPath": "themes/icons/java.svg"
-        },
-        "html": {
-            "iconPath": "themes/icons/html.svg"
-        },
-        "css": {
-            "iconPath": "themes/icons/css.svg"
-        },
-        "json": {
-            "iconPath": "themes/icons/json.svg"
-        },
-        "yaml": {
-            "iconPath": "themes/icons/yaml.svg"
-        },
-        "toml": {
-            "iconPath": "themes/icons/toml.svg"
-        },
-        "markdown": {
-            "iconPath": "themes/icons/markdown.svg"
-        },
-        "git": {
-            "iconPath": "themes/icons/git.svg"
-        },
-        "npm": {
-            "iconPath": "themes/icons/npm.svg"
-        },
-        "yarn": {
-            "iconPath": "themes/icons/yarn.svg"
-        },
-        "test": {
-            "iconPath": "themes/icons/test.svg"
-        },
-        "folder_src": {
-            "iconPath": "themes/icons/folder-src.svg"
-        },
-        "folder_dist": {
-            "iconPath": "themes/icons/folder-dist.svg"
-        },
-        "folder_node": {
-            "iconPath": "themes/icons/folder-node.svg"
-        },
-        "folder_test": {
-            "iconPath": "themes/icons/folder-test.svg"
-        },
-        "folder_github": {
-            "iconPath": "themes/icons/folder-github.svg"
-        },
-        "folder_vscode": {
-            "iconPath": "themes/icons/folder-vscode.svg"
-        }
+  "hidesExplorerArrows": false,
+  "iconDefinitions": {
+    "default-file": {
+      "iconPath": "./icons/file.svg"
     },
-    "file": "file",
-    "folder": "folder",
-    "folderExpanded": "folder-expanded",
-    "rootFolder": "root-folder",
-    "rootFolderExpanded": "root-folder-expanded",
-    "fileExtensions": {
-        "ts": "typescript",
-        "tsx": "typescript",
-        "d.ts": "typescript",
-        "js": "javascript",
-        "jsx": "javascript",
-        "mjs": "javascript",
-        "py": "python",
-        "pyw": "python",
-        "ipynb": "python",
-        "java": "java",
-        "jar": "java",
-        "html": "html",
-        "htm": "html",
-        "css": "css",
-        "scss": "css",
-        "sass": "css",
-        "json": "json",
-        "yml": "yaml",
-        "yaml": "yaml",
-        "toml": "toml",
-        "md": "markdown",
-        "mdx": "markdown",
-        "spec.ts": "test",
-        "test.ts": "test",
-        "spec.js": "test",
-        "test.js": "test"
+    "default-folder": {
+      "iconPath": "./icons/folder.svg"
     },
-    "fileNames": {
-        ".gitignore": "git",
-        ".gitattributes": "git",
-        ".gitmodules": "git",
-        "package.json": "npm",
-        "package-lock.json": "npm",
-        "yarn.lock": "yarn"
+    "default-folder-expanded": {
+      "iconPath": "./icons/folder.svg"
     },
-    "folderNames": {
-        "src": "folder_src",
-        "source": "folder_src",
-        "dist": "folder_dist",
-        "build": "folder_dist",
-        "out": "folder_dist",
-        "node_modules": "folder_node",
-        "test": "folder_test",
-        "tests": "folder_test",
-        "__tests__": "folder_test",
-        ".github": "folder_github",
-        ".vscode": "folder_vscode"
+    "default-root-folder": {
+      "iconPath": "./icons/folder.svg"
     },
-    "languageIds": {}
+    "default-root-folder-expanded": {
+      "iconPath": "./icons/folder.svg"
+    },
+    "source-ts": {
+      "iconPath": "./icons/typescript.svg"
+    },
+    "source-js": {
+      "iconPath": "./icons/javascript.svg"
+    },
+    "source-jsx": {
+      "iconPath": "./icons/react.svg"
+    },
+    "source-tsx": {
+      "iconPath": "./icons/react_ts.svg"
+    },
+    "source-vue": {
+      "iconPath": "./icons/vue.svg"
+    },
+    "source-python": {
+      "iconPath": "./icons/python.svg"
+    },
+    "source-java": {
+      "iconPath": "./icons/java.svg"
+    },
+    "source-go": {
+      "iconPath": "./icons/go.svg"
+    },
+    "source-rust": {
+      "iconPath": "./icons/rust.svg"
+    },
+    "source-cpp": {
+      "iconPath": "./icons/cpp.svg"
+    },
+    "source-c": {
+      "iconPath": "./icons/c.svg"
+    },
+    "source-swift": {
+      "iconPath": "./icons/swift.svg"
+    },
+    "source-kotlin": {
+      "iconPath": "./icons/kotlin.svg"
+    },
+    "source-php": {
+      "iconPath": "./icons/php.svg"
+    },
+    "source-ruby": {
+      "iconPath": "./icons/ruby.svg"
+    },
+    "html": {
+      "iconPath": "./icons/html.svg"
+    },
+    "css": {
+      "iconPath": "./icons/css.svg"
+    },
+    "scss": {
+      "iconPath": "./icons/scss.svg"
+    },
+    "less": {
+      "iconPath": "./icons/less.svg"
+    },
+    "stylus": {
+      "iconPath": "./icons/stylus.svg"
+    },
+    "svg": {
+      "iconPath": "./icons/svg.svg"
+    },
+    "settings-json": {
+      "iconPath": "./icons/settings.svg"
+    },
+    "settings-yaml": {
+      "iconPath": "./icons/yaml.svg"
+    },
+    "settings-toml": {
+      "iconPath": "./icons/toml.svg"
+    },
+    "settings-ini": {
+      "iconPath": "./icons/ini.svg"
+    },
+    "settings-env": {
+      "iconPath": "./icons/env.svg"
+    },
+    "git-file": {
+      "iconPath": "./icons/git.svg"
+    },
+    "git-ignore": {
+      "iconPath": "./icons/git.svg"
+    },
+    "git-config": {
+      "iconPath": "./icons/git.svg"
+    },
+    "package-json": {
+      "iconPath": "./icons/npm.svg"
+    },
+    "package-lock": {
+      "iconPath": "./icons/npm.svg"
+    },
+    "yarn-lock": {
+      "iconPath": "./icons/yarn.svg"
+    },
+    "pnpm-lock": {
+      "iconPath": "./icons/pnpm.svg"
+    },
+    "webpack": {
+      "iconPath": "./icons/webpack.svg"
+    },
+    "rollup": {
+      "iconPath": "./icons/rollup.svg"
+    },
+    "vite": {
+      "iconPath": "./icons/vite.svg"
+    },
+    "babel": {
+      "iconPath": "./icons/babel.svg"
+    },
+    "tsconfig": {
+      "iconPath": "./icons/tsconfig.svg"
+    },
+    "test-js": {
+      "iconPath": "./icons/test.svg"
+    },
+    "test-ts": {
+      "iconPath": "./icons/test_ts.svg"
+    },
+    "test-jsx": {
+      "iconPath": "./icons/test_jsx.svg"
+    },
+    "jest": {
+      "iconPath": "./icons/jest.svg"
+    },
+    "cypress": {
+      "iconPath": "./icons/cypress.svg"
+    },
+    "folder-src": {
+      "iconPath": "./icons/folder_src.svg"
+    },
+    "folder-src-expanded": {
+      "iconPath": "./icons/folder_src.svg"
+    },
+    "folder-dist": {
+      "iconPath": "./icons/folder_dist.svg"
+    },
+    "folder-dist-expanded": {
+      "iconPath": "./icons/folder_dist.svg"
+    },
+    "folder-test": {
+      "iconPath": "./icons/folder_test.svg"
+    },
+    "folder-test-expanded": {
+      "iconPath": "./icons/folder_test.svg"
+    },
+    "folder-node": {
+      "iconPath": "./icons/folder_node.svg"
+    },
+    "folder-node-expanded": {
+      "iconPath": "./icons/folder_node.svg"
+    },
+    "folder-public": {
+      "iconPath": "./icons/folder_public.svg"
+    },
+    "folder-public-expanded": {
+      "iconPath": "./icons/folder_public.svg"
+    },
+    "folder-assets": {
+      "iconPath": "./icons/folder_assets.svg"
+    },
+    "folder-assets-expanded": {
+      "iconPath": "./icons/folder_assets.svg"
+    },
+    "folder-components": {
+      "iconPath": "./icons/folder_components.svg"
+    },
+    "folder-components-expanded": {
+      "iconPath": "./icons/folder_components.svg"
+    },
+    "folder-utils": {
+      "iconPath": "./icons/folder_util.svg"
+    },
+    "folder-utils-expanded": {
+      "iconPath": "./icons/folder_util.svg"
+    },
+    "folder-docs": {
+      "iconPath": "./icons/folder_docs.svg"
+    },
+    "folder-docs-expanded": {
+      "iconPath": "./icons/folder_docs.svg"
+    }
+  },
+  "file": "default-file",
+  "folder": "default-folder",
+  "folderExpanded": "default-folder-expanded",
+  "rootFolder": "default-root-folder",
+  "rootFolderExpanded": "default-root-folder-expanded",
+  "fileExtensions": {
+    "ts": "source-ts",
+    "tsx": "source-tsx",
+    "mts": "source-ts",
+    "cts": "source-ts",
+    "d.ts": "source-ts",
+    "js": "source-js",
+    "jsx": "source-jsx",
+    "mjs": "source-js",
+    "cjs": "source-js",
+    "html": "html",
+    "htm": "html",
+    "xhtml": "html",
+    "css": "css",
+    "scss": "scss",
+    "sass": "scss",
+    "less": "less",
+    "styl": "stylus",
+    "svg": "svg",
+    "vue": "source-vue",
+    "py": "source-python",
+    "pyw": "source-python",
+    "ipynb": "source-python",
+    "java": "source-java",
+    "jar": "source-java",
+    "class": "source-java",
+    "go": "source-go",
+    "rs": "source-rust",
+    "rlib": "source-rust",
+    "c": "source-c",
+    "h": "source-c",
+    "cpp": "source-cpp",
+    "hpp": "source-cpp",
+    "cc": "source-cpp",
+    "cxx": "source-cpp",
+    "swift": "source-swift",
+    "kt": "source-kotlin",
+    "kts": "source-kotlin",
+    "php": "source-php",
+    "rb": "source-ruby",
+    "erb": "source-ruby",
+    "json": "settings-json",
+    "yaml": "settings-yaml",
+    "yml": "settings-yaml",
+    "toml": "settings-toml",
+    "ini": "settings-ini",
+    "env": "settings-env",
+    "env.local": "settings-env",
+    "env.development": "settings-env",
+    "env.production": "settings-env"
+  },
+  "fileNames": {
+    ".gitignore": "git-ignore",
+    ".gitattributes": "git-file",
+    ".gitmodules": "git-file",
+    ".gitconfig": "git-config",
+    "package.json": "package-json",
+    "package-lock.json": "package-lock",
+    "yarn.lock": "yarn-lock",
+    "pnpm-lock.yaml": "pnpm-lock",
+    "webpack.config.js": "webpack",
+    "webpack.config.ts": "webpack",
+    "rollup.config.js": "rollup",
+    "rollup.config.ts": "rollup",
+    "vite.config.js": "vite",
+    "vite.config.ts": "vite",
+    ".babelrc": "babel",
+    "babel.config.js": "babel",
+    "tsconfig.json": "tsconfig",
+    "jest.config.js": "jest",
+    "jest.config.ts": "jest",
+    "cypress.config.js": "cypress",
+    "cypress.config.ts": "cypress"
+  },
+  "languageIds": {
+    "typescript": "source-ts",
+    "javascript": "source-js",
+    "javascriptreact": "source-jsx",
+    "typescriptreact": "source-tsx",
+    "vue": "source-vue",
+    "python": "source-python",
+    "java": "source-java",
+    "go": "source-go",
+    "rust": "source-rust",
+    "cpp": "source-cpp",
+    "c": "source-c",
+    "swift": "source-swift",
+    "kotlin": "source-kotlin",
+    "php": "source-php",
+    "ruby": "source-ruby",
+    "html": "html",
+    "css": "css",
+    "scss": "scss",
+    "less": "less",
+    "stylus": "stylus",
+    "json": "settings-json",
+    "yaml": "settings-yaml",
+    "toml": "settings-toml"
+  },
+  "folderNames": {
+    "src": "folder-src",
+    "source": "folder-src",
+    "dist": "folder-dist",
+    "build": "folder-dist",
+    "out": "folder-dist",
+    "test": "folder-test",
+    "tests": "folder-test",
+    "__tests__": "folder-test",
+    "node_modules": "folder-node",
+    "public": "folder-public",
+    "assets": "folder-assets",
+    "components": "folder-components",
+    "utils": "folder-utils",
+    "helpers": "folder-utils",
+    "docs": "folder-docs",
+    "documentation": "folder-docs"
+  },
+  "folderNamesExpanded": {
+    "src": "folder-src-expanded",
+    "source": "folder-src-expanded",
+    "dist": "folder-dist-expanded",
+    "build": "folder-dist-expanded",
+    "out": "folder-dist-expanded",
+    "test": "folder-test-expanded",
+    "tests": "folder-test-expanded",
+    "__tests__": "folder-test-expanded",
+    "node_modules": "folder-node-expanded",
+    "public": "folder-public-expanded",
+    "assets": "folder-assets-expanded",
+    "components": "folder-components-expanded",
+    "utils": "folder-utils-expanded",
+    "helpers": "folder-utils-expanded",
+    "docs": "folder-docs-expanded",
+    "documentation": "folder-docs-expanded"
+  }
 }
